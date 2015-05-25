@@ -1,6 +1,13 @@
-<% provide(:title, "Home") %>
-<h1>App Template</h1>
-<p>
-  This is the home page for my RoR template app. Learn more about Ruby on Rails at:
-  <a href="http://rubyonrails.org/">RoR Template App Home</a>
-</p>
+<div class="center jumbotron">
+  <h1>RoR App Template Home</h1>
+
+  <h2>
+    This is the home page for Michelle's RoR template app.
+    <a href="http://www.rubyonrails.org/">Visit rubyonrails.org to learn more about RoR.</a>
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Scary Unicorn"),
+            'http://rubyonrails.org/' %>
